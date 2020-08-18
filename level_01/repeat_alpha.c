@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/18 12:44:28 by trahman           #+#    #+#             */
-/*   Updated: 2020/08/18 13:17:11 by trahman          ###   ########.fr       */
+/*   Updated: 2020/08/18 13:44:48 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,8 @@ int main(int argc, char **argv)
 					while (--letter)
 						write(1, &argv[1][i], 1);
 			}
-			else
-				write (1,&argv[1][i], 1);
-				i += 1;
+			write (1,&argv[1][i], 1);
+			i += 1;
 		}
 	}
 		write (1, "\n", 1);
