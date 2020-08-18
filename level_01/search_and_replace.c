@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/18 13:27:47 by trahman           #+#    #+#             */
-/*   Updated: 2020/08/18 13:30:09 by trahman          ###   ########.fr       */
+/*   Updated: 2020/08/18 17:24:26 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 int main(int argc, char **argv)
 {
 	int i;
-	int letter;
-
+	
 	i = 0;
 	if (argc == 4)
 	{
@@ -28,7 +27,7 @@ int main(int argc, char **argv)
 					write(1, &argv[3][0], 1);
 				else
 					write(1, &argv[1][i], 1);
-				i += 1;
+				i++;
 			}
 		}
 	}
