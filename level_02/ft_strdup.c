@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 09:12:45 by trahman           #+#    #+#             */
-/*   Updated: 2020/09/29 09:37:05 by trahman          ###   ########.fr       */
+/*   Updated: 2020/09/29 09:43:19 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,11 @@ char	*ft_strdup(char *src)
 
 int	main(void)
 {
-	char s[] = "Hello World";
-	ft_strdup(s);
-	printf("%s\n", s);
-	return (0);
+	char	*str;
+	char	*str2;
+	
+	str = "42 school";
+	str2 = ft_strdup(str);
+	printf("%s\n", str);
+	printf("%s\n", str2);
 }
