@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 09:56:11 by trahman           #+#    #+#             */
-/*   Updated: 2020/09/29 10:52:43 by trahman          ###   ########.fr       */
+/*   Updated: 2020/09/29 11:39:00 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int	ft_atoi(char *str)
 		str++;
 	while (*str >= '0' && *str <= '9')
 	{
-		result = result * 10 + *str - '0';
+		result = (result * 10) + (*str) - '0';
 		str++;
 	}
 	return (sign * result);
