@@ -6,14 +6,14 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/29 11:10:18 by trahman           #+#    #+#             */
-/*   Updated: 2020/09/29 11:20:59 by trahman          ###   ########.fr       */
+/*   Updated: 2020/09/29 11:25:13 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include <unistd.h>
 
-int     main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int i;
 	int start;
