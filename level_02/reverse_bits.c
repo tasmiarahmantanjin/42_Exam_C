@@ -6,9 +6,11 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 22:34:42 by trahman           #+#    #+#             */
-/*   Updated: 2020/09/28 22:39:59 by trahman          ###   ########.fr       */
+/*   Updated: 2020/09/29 11:45:53 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 unsigned char	reverse_bits(unsigned char octet)
 {
@@ -20,4 +22,10 @@ unsigned char	reverse_bits(unsigned char octet)
 		(((octet >> 5) & 1) << 2) | \
 		(((octet >> 6) & 1) << 1) | \
 		(((octet >> 7) & 1) << 0);
+}
+
+int	main()
+{
+	printf("%d", reverse_bits(38));
+	return (0);
 }
