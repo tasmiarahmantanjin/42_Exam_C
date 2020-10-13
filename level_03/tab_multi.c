@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/04 20:41:54 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/05 09:21:05 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/13 12:49:35 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,35 +20,44 @@ int	ft_atoi(char *str)
 
 	result = 0;
 	sign = 1;
-	if (!str)
+	if(!str)
 		return (0);
-	while (*str == ' ' || (*str >= 9 && *str <= 13))
+	while ((*str == ' ') || (*str >= 9 && *str <= 13))
 		str++;
 	if (*str == '-')
 		sign = -1;
-	if (*str == '-' || *str == '+')
+	if ((*str == '-') || (*str == '+'))
 		str++;
 	while (*str >= '0' && *str <= '9')
 	{
 		result = (result * 10) + (*str) - '0';
 		str++;
 	}
-	return (sign * result);
+	return (result * sign);
 }
 
 void	ft_putnbr(int nb)
 {
-	char	c;
+	char c;
 
-	if (nb > 0)
+	if (nb < 0)
+		{
+			nb = -nb;
+			write (1, "-", 1);
+		}
+	if (nb < 10)
+	{
+		c = nb + '0';
+		write (1, &c, 1);
+	}
+	else
 	{
 		ft_putnbr(nb / 10);
-		c = nb % 10 + '0';
-		write(1, &c, 1);
+		ft_putnbr(nb % 10);
 	}
 }
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int	i;
 	int	nbr;
