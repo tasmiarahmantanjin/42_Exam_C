@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/12 20:14:51 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/13 12:17:12 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/13 14:45:23 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void	ft_putnbr(int nb)
 
 int		main(int argc, const char *argv[])
 {
+	(void)argv;
 	ft_putnbr(argc - 1);
 	write (1, "\n", 1);
 	return (0);
