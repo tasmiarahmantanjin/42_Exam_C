@@ -1,3 +1,3 @@
 # 42_Exam_C
 
-42_Exam_C subjects and solution for practice
+42_Exam_C subjects and solution
