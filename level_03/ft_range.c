@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 10:32:08 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/13 11:22:40 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/13 11:52:41 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	main(void)
 	int *result;
 
 	i = 0;
-	result = ft_range(-1, 4);
+	result = ft_range(0, -3);
 	while (i < 4)
 	{
 		printf("The value is: %d\n", result[i]);
