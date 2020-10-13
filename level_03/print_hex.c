@@ -1,21 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   add_prime_sum.c                                    :+:      :+:    :+:   */
+/*   print_hex.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/05 09:08:01 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/12 18:44:19 by trahman          ###   ########.fr       */
+/*   Created: 2020/10/04 22:09:43 by trahman           #+#    #+#             */
+/*   Updated: 2020/10/04 22:10:12 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void	print_hex(int p)
+{
+	char *str;
+
+	str = "0123456789abcdef";
+	if (p == 0)
+		write (1, "0", 1);
+	while (p)
+	{
+		write(1, &str[p % 16], 1);
+		p /= 16;
+	}
+}
+
 int	ft_atoi(char *str)
 {
-	int	sign;
 	int	result;
+	int	sign;
 
 	result = 0;
 	sign = 1;
@@ -35,58 +49,10 @@ int	ft_atoi(char *str)
 	return (sign * result);
 }
 
-void	ft_putnbr(int nb)
-{
-	char	c;
-
-	if (nb < 0)
-	{
-		nb = -nb;
-		write(1, "-", 1);
-	}
-	if (nb < 10)
-	{
-		c = nb + '0';
-		write(1, &c, 1);
-	}
-	else
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-	}
-}
-
-int		is_prime(int nb)
-{
-	int i;
-
-	i = 2;
-	if (nb <= 1)
-		return (0);
-	while (i <= (nb / 2))
-	{
-		if (!(nb % i))
-			return (0);
-		else
-			i += 1;
-	}
-	return (1);
-}
-
 int		main(int argc, char *argv[])
 {
-	int		nb;
-	int		sum;
-
 	if (argc == 2)
-	{
-		nb = ft_atoi(argv[1]);
-		sum = 0;
-		while (nb > 0)
-			if (is_prime(nb--))
-				sum += (nb + 1);
-		ft_putnbr(sum);
-	}
+		print_hex(ft_atoi(argv[1]));
 	write(1, "\n", 1);
 	return (0);
 }
