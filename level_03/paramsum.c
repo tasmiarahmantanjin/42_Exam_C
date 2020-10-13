@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/12 20:14:51 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/13 14:45:23 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/13 14:46:17 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,3 @@ int		main(int argc, const char *argv[])
 	write (1, "\n", 1);
 	return (0);
 }
-
