@@ -6,40 +6,40 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 20:53:15 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/19 20:53:41 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/19 20:57:30 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	rstr_capitalizer(char *str)
+void    rstr_capitalizer(char *str)
 {
-	int		i;
+	int i;
 
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] >= 'A' && 'Z' >= str[i])
+		if (str[i] >= 'A' && str[i] <= 'Z')
 			str[i] += 32;
-		if ((str[i] >= 'a' && 'z' >= str[i]) && (str[i + 1] == ' ' || \
-			str[i + 1] == '\t' || str[i + 1] == '\0'))
+		if ((str[i] >= 'a' && str[i] <= 'z') && (str[i + 1] == ' ' \
+			|| str[i + 1] == '\t' || str[i + 1] == '\0'))
 			str[i] -= 32;
 		write(1, &str[i++], 1);
 	}
 }
 
-int		main(int argc, char *argv[])
+int main(int ac, char **av)
 {
-	int		i;
+	int i;
 
-	if (argc < 1)
-		write (1, "\n", 1);
+	if (ac < 1)
+		write(1, "\n", 1);
 	else
 	{
 		i = 1;
-		while (i < argc)
+		while (i < ac)
 		{
-			rstr_capitalizer(argv[i]);
+			rstr_capitalizer(av[i]);
 			write(1, "\n", 1);
 			i += 1;
 		}
