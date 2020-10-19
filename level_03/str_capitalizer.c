@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 20:49:46 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/19 20:52:35 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/19 20:59:29 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	str_capitalizer(char *str)
 {
-	int	i;
+	int		i;
 
 	i = 0;
 	if (str[i] >= 'a' && 'z' >= str[i])
@@ -25,7 +25,7 @@ void	str_capitalizer(char *str)
 		if (str[i] >= 'A' && 'Z' >= str[i])
 			str[i] += 32;
 		if ((str[i] >= 'a' && 'z' >= str[i]) && (str[i - 1] == ' ' || \
-		str[i] == '\t'))
+		str[i - 1] == '\t'))
 			str[i] -= 32;
 		write(1, &str[i], 1);
 	}
@@ -33,9 +33,9 @@ void	str_capitalizer(char *str)
 
 int		main(int argc, char *argv[])
 {
-	int	i;
+	int		i;
 
-	if (argc < 1)
+	if (argc < 2)
 		write(1, "\n", 1);
 	else
 	{
