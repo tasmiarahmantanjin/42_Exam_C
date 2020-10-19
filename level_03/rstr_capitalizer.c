@@ -6,13 +6,13 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 20:53:15 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/19 20:57:30 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/19 20:57:48 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void    rstr_capitalizer(char *str)
+void	rstr_capitalizer(char *str)
 {
 	int i;
 
