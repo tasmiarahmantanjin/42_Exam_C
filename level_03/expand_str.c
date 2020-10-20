@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/12 18:55:18 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/12 18:56:00 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/20 10:37:18 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,26 @@
 
 int		main(int argc, char const **argv)
 {
-	int		i;
-	int		flg;
+	int	i;
+	int	flg;
 
+	i = 0;
 	if (argc == 2)
 	{
-		i = 0;
-		while (argv[1][i] == ' ' || argv[1][i] == '\t')
-			i += 1;
+		while ((argv[1][i] == ' ') || (argv[1][i]== '\t'))
+			i++;
 		while (argv[1][i])
 		{
-			if (argv[1][i] == ' ' || argv[1][i] == '\t')
+			if ((argv[1][i] == ' ') || (argv[1][i] == '\t'))
 				flg = 1;
-			if (!(argv[1][i] == ' ' || argv[1][i] == '\t'))
+			if (!((argv[1][i] == ' ') || (argv[1][i] == '\t')))
 			{
 				if (flg)
-					write(1, "   ", 3);
+					write (1, "   ", 3);
 				flg = 0;
 				write(1, &argv[1][i], 1);
 			}
-			i += 1;
+			i++;
 		}
 	}
 	write(1, "\n", 1);
