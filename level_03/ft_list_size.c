@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 12:54:48 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/20 16:25:34 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/20 16:27:48 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ int	ft_list_size(t_list *begin_list)
 	}
 	return (size);
 }
-
 
 t_list	*new(void *data) //only for testing purpose
 {
