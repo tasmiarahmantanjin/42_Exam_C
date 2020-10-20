@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 20:49:46 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/19 20:59:29 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/20 11:06:36 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ void	str_capitalizer(char *str)
 	}
 }
 
-int		main(int argc, char *argv[])
+int		main(int argc, char **argv)
 {
-	int		i;
+	int	i;
 
 	if (argc < 2)
 		write(1, "\n", 1);
@@ -44,7 +44,7 @@ int		main(int argc, char *argv[])
 		{
 			str_capitalizer(argv[i]);
 			write(1, "\n", 1);
-			i += 1;
+			i++;
 		}
 	}
 	return (0);
