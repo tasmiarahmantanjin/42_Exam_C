@@ -6,14 +6,16 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 12:54:48 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/13 13:03:34 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/20 16:25:34 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+#include <stdlib.h>
 #include "ft_list_size.h"
 
-/*
-typedef	struct		s_list
+/* struct given to the subject
+typedef struct		s_list
 {
 	struct s_list	*next;
 	void			*data;
@@ -33,7 +35,21 @@ int	ft_list_size(t_list *begin_list)
 	return (size);
 }
 
-int	main(void)
+
+t_list	*new(void *data) //only for testing purpose
+{
+	t_list *n;
+
+	n = (t_list *)malloc(sizeof(t_list));
+	if (n)
+	{
+		n->data = data;
+		n->next = NULL;
+	}
+	return (n);
+}
+
+int	main(void) //only for testing purpose
 {
 	t_list *p, *s, *j, *t;
 
