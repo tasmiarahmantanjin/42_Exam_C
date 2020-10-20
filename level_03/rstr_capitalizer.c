@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 20:53:15 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/20 12:02:11 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/20 12:06:45 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	rstr_capitalizer(char *str)
 		write(1, &str[i++], 1);
 	}
 }
-
 
 int main(int argc, char **argv)
 {
