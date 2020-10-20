@@ -6,12 +6,12 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/05 09:08:01 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/19 20:48:12 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/20 09:44:19 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-
+#include <stdio.h>
 int	ft_atoi(char *str)
 {
 	int	sign;
@@ -56,7 +56,7 @@ void	ft_putnbr(int nb)
 	}
 }
 
-int		is_prime(int nb)
+int	is_prime(int nb)
 {
 	int i;
 
@@ -65,23 +65,23 @@ int		is_prime(int nb)
 		return (0);
 	while (i <= (nb / 2))
 	{
-		if (!(nb % i))
+		if(!(nb % 2))
 			return (0);
 		else
-			i += 1;
+			i++;
 	}
 	return (1);
 }
 
-int		main(int argc, char *argv[])
+int	main(int argc, char **argv)
 {
-	int		nb;
-	int		sum;
+	int nb;
+	int sum;
 
+	sum = 0;
 	if (argc == 2)
 	{
 		nb = ft_atoi(argv[1]);
-		sum = 0;
 		while (nb > 0)
 			if (is_prime(nb--))
 				sum += (nb + 1);
