@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/05 09:08:01 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/20 09:44:19 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/20 09:51:58 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,8 +75,8 @@ int	is_prime(int nb)
 
 int	main(int argc, char **argv)
 {
-	int nb;
-	int sum;
+	int	nb;
+	int	sum;
 
 	sum = 0;
 	if (argc == 2)
