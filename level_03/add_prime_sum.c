@@ -6,12 +6,13 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/05 09:08:01 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/20 09:51:58 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/27 11:56:14 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
+
 int	ft_atoi(char *str)
 {
 	int	sign;
