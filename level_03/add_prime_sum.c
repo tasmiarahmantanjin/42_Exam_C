@@ -6,14 +6,14 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/05 09:08:01 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/27 11:56:14 by trahman          ###   ########.fr       */
+/*   Updated: 2020/10/27 11:58:12 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-int	ft_atoi(char *str)
+int		ft_atoi(char *str)
 {
 	int	sign;
 	int	result;
@@ -57,7 +57,7 @@ void	ft_putnbr(int nb)
 	}
 }
 
-int	is_prime(int nb)
+int		is_prime(int nb)
 {
 	int i;
 
@@ -74,7 +74,7 @@ int	is_prime(int nb)
 	return (1);
 }
 
-int	main(int argc, char **argv)
+int		main(int argc, char **argv)
 {
 	int	nb;
 	int	sum;
