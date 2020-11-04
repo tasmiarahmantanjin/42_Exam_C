@@ -6,9 +6,11 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 18:33:23 by trahman           #+#    #+#             */
-/*   Updated: 2020/11/03 18:39:15 by trahman          ###   ########.fr       */
+/*   Updated: 2020/11/04 10:34:38 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 void	sort_int_tab(int *tab, unsigned int size)
 {
@@ -28,8 +30,20 @@ void	sort_int_tab(int *tab, unsigned int size)
 				tab[i] = tab[j];
 				tab[j] = tmp;
 			}
-			j += 1;
+			j++;
 		}
-		i += 1;
+		i++;
 	}
+}
+
+int		main(void)
+{
+	int a[6] = {8, 7, 6, 1, 5, 10};
+	int i = 0;
+	int size = 6;
+
+	sort_int_tab(a, size);
+	while (i < size)
+		printf("%d\n", a[i++]);
+	return (0);
 }
