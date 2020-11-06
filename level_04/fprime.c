@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 18:09:14 by trahman           #+#    #+#             */
-/*   Updated: 2020/11/06 14:42:46 by trahman          ###   ########.fr       */
+/*   Updated: 2020/11/06 14:43:19 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int		main(int argc, char *argv[])
 				if (nbr == i)
 					break ;
 				printf("*");
-				nbr /= i;	// nbr = nbr / i(to save the reminder)
+				nbr /= i;	// nbr = (nbr / i)(to save the reminder)
 				i = 1;
 			}
 			i++;
