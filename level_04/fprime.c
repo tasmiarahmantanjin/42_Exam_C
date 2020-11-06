@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 18:09:14 by trahman           #+#    #+#             */
-/*   Updated: 2020/11/03 18:30:18 by trahman          ###   ########.fr       */
+/*   Updated: 2020/11/06 14:42:46 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@ int		main(int argc, char *argv[])
 			printf("1");
 		while (nbr >= i)
 		{
-			if (nbr % i == 0)   //nbr = 15
+			if (nbr % i == 0)
 			{
 				printf("%d", i);
 				if (nbr == i)
 					break ;
 				printf("*");
-				nbr /= i; // nbr = nbr / i(to save the reminder)
+				nbr /= i;	// nbr = nbr / i(to save the reminder)
 				i = 1;
 			}
 			i++;
