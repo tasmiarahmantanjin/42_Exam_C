@@ -6,7 +6,7 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/04 10:38:25 by trahman           #+#    #+#             */
-/*   Updated: 2020/11/04 11:24:18 by trahman          ###   ########.fr       */
+/*   Updated: 2020/11/16 23:16:29 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ char	*ft_itoa(int nbr)
 	return (str);
 }
 
+
+/* main for itoa
 int		main(void)
 {
 	printf("%s\n", ft_itoa(33));
@@ -65,3 +67,4 @@ int		main(void)
 	printf("%s\n", ft_itoa(0));
 	return (0);
 }
+*/

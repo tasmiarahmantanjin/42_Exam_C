@@ -6,13 +6,9 @@
 /*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/20 12:28:05 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/20 16:12:35 by trahman          ###   ########.fr       */
+/*   Updated: 2020/11/03 12:32:39 by trahman          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-** https://hackmd.io/@ep8OMr9mS8-jCj2zXotKDg/ryoVoodLz?type=view
-*/
 
 /*
 ** https://hackmd.io/@ep8OMr9mS8-jCj2zXotKDg/ryoVoodLz?type=view
@@ -66,7 +62,7 @@ int	main(void)
 	printf("%d\n", ft_atoi_base("16", atoi("8")));
 	printf("%d\n", ft_atoi_base("123", atoi("10")));
 	printf("%d\n", ft_atoi_base("AAF", atoi("16")));
-	printf("%d\n", ft_atoi_base("abc", atoi("16")));
+	printf("%d\n", ft_atoi_base("f", atoi("16")));
 	printf("%d\n", ft_atoi_base("ABC", atoi("16")));
 	printf("%d\n", ft_atoi_base("AAcc", atoi("16")));
 }
