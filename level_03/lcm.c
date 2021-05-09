@@ -36,3 +36,4 @@ int				main()
 	printf("%d\n", lcm(5, 9));
 	return (0);
 }
+
