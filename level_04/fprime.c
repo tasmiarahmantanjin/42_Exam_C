@@ -13,10 +13,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int		main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int		i;
-	int		nbr;
+	int i;
+	int nbr;
 
 	if (argc == 2)
 	{
@@ -30,9 +30,9 @@ int		main(int argc, char *argv[])
 			{
 				printf("%d", i);
 				if (nbr == i)
-					break ;
+					break;
 				printf("*");
-				nbr /= i;	// nbr = (nbr / i)(to save the reminder)
+				nbr /= i; // nbr = (nbr / i)(to save the reminder)
 				i = 1;
 			}
 			i++;
