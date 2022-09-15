@@ -1,22 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   list.h                                             :+:      :+:    :+:   */
+/*   rostring.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
+/*   By: tasmiarahman <tasmiarahman@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/11/04 11:35:34 by trahman           #+#    #+#             */
-/*   Updated: 2020/11/04 11:36:20 by trahman          ###   ########.fr       */
+/*   Created: 2020/10/20 12:09:08 by trahman           #+#    #+#             */
+/*   Updated: 2022/09/07 10:05:12 by tasmiarahma      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_LIST_H
-# define FT_LIST_H
+#include <stdio.h>
 
-typedef struct		s_list
+int main(int argc, char *argv[])
 {
-	struct s_list	*next;
-	void			*data;
-}					t_list;
-
-#endif
+}

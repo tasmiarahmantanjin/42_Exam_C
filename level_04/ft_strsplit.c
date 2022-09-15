@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trahman <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: tasmiarahman <tasmiarahman@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 11:55:29 by trahman           #+#    #+#             */
-/*   Updated: 2020/10/08 11:59:25 by trahman          ###   ########.fr       */
+/*   Updated: 2022/09/14 19:22:00 by tasmiarahma      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 ** and return the index number of 2nd layer array
 */
 
-static	int		ft_chr(char const *s, char c)
+static int ft_chr(char const *s, char c)
 {
 	int i;
 
@@ -28,7 +28,7 @@ static	int		ft_chr(char const *s, char c)
 	return (i);
 }
 
-int	ft_wordcount(char const *s, char c)
+int ft_wordcount(char const *s, char c)
 {
 	int i;
 	int count;
@@ -48,11 +48,11 @@ int	ft_wordcount(char const *s, char c)
 	return (count);
 }
 
-char			**ft_strsplit(char const *s, char c)
+char **ft_strsplit(char const *s, char c)
 {
-	char	**ptr;
-	int		x;
-	int		y;
+	char **ptr;
+	int x;
+	int y;
 
 	if (!s)
 		return (0);
@@ -76,4 +76,3 @@ char			**ft_strsplit(char const *s, char c)
 	ptr[++x] = NULL;
 	return (ptr);
 }
-

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sort_list.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
+/*   By: tasmiarahman <tasmiarahman@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/04 11:34:10 by trahman           #+#    #+#             */
-/*   Updated: 2020/11/04 11:41:55 by trahman          ###   ########.fr       */
+/*   Updated: 2022/09/15 10:47:14 by tasmiarahma      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,46 +15,47 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-t_list		*sort_list(t_list* lst, int (*cmp)(int, int))
+t_list *sort_list(t_list *lst, int (*cmp)(int, int))
 {
-	int		overflow;
-	t_list	*tmp;
+	int tmp;
+	t_list *curr;
 
-	tmp = lst;
+	curr = lst;
 	while (lst->next != NULL)
 	{
 		if (((*cmp)(lst->data, lst->next->data)) == 0)
 		{
-			overflow = lst->data;
+			tmp = lst->data;
 			lst->data = lst->next->data;
-			lst->next->data = overflow;
-			lst = tmp;
+			lst->next->data = tmp;
+
+			lst = curr;
 		}
 		else
 			lst = lst->next;
 	}
-	lst = tmp;
+	lst = curr;
 	return (lst);
 }
 
-/* Main for test the sort_list.c Function
+// Main for test the sort_list.c Function
 
-t_list		*add_int(t_list *list, int nb)
+t_list *add_int(t_list *list, int nb)
 {
 	t_list *new;
 
-	new = (t_list*)malloc(sizeof(t_list));
+	new = (t_list *)malloc(sizeof(t_list));
 	new->data = nb;
 	new->next = list;
 	return (new);
 }
 
-int			ascending(int a, int b)
+int ascending(int a, int b)
 {
-		return (a <= b);
+	return (a <= b);
 }
 
-int	main(void)
+int main(void)
 {
 	t_list *list;
 
@@ -64,14 +65,15 @@ int	main(void)
 	list = add_int(list, 2);
 	list = add_int(list, 4);
 	list = add_int(list, 1);
+	list = add_int(list, 89);
+	list = add_int(list, 21);
 	list = sort_list(list, &ascending);
 
-	while(list != NULL)
+	while (list != NULL)
 	{
 		printf("%d\n", list->data);
 		list = list->next;
 	}
-	
+
 	return (0);
 }
-*/

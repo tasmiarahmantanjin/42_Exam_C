@@ -1,13 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   practice.c                                         :+:      :+:    :+:   */
+/*   ft_list.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
+/*   By: tasmiarahman <tasmiarahman@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/20 12:09:08 by trahman           #+#    #+#             */
-/*   Updated: 2020/11/04 11:36:43 by trahman          ###   ########.fr       */
+/*   Created: 2016/12/03 22:18:13 by angavrel          #+#    #+#             */
+/*   Updated: 2022/09/07 10:34:43 by tasmiarahma      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FT_LIST_H
+#define FT_LIST_H
 
+typedef struct s_list
+{
+    struct s_list *next;
+    void *data;
+} t_list;
+
+#endif

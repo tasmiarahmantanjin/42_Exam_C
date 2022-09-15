@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fprime.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: trahman <trahman@student.hive.fi>          +#+  +:+       +#+        */
+/*   By: tasmiarahman <tasmiarahman@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 18:09:14 by trahman           #+#    #+#             */
-/*   Updated: 2020/11/06 14:43:19 by trahman          ###   ########.fr       */
+/*   Updated: 2022/09/15 14:44:59 by tasmiarahma      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,10 @@ int main(int argc, char *argv[])
 	{
 		i = 2;
 		nbr = atoi(argv[1]);
+
 		if (nbr == 1)
 			printf("1");
+
 		while (nbr >= i)
 		{
 			if (nbr % i == 0)
