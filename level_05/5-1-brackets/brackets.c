@@ -6,7 +6,7 @@
 /*   By: tasmiarahman <tasmiarahman@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/26 17:35:14 by trahman           #+#    #+#             */
-/*   Updated: 2022/09/13 10:22:31 by tasmiarahma      ###   ########.fr       */
+/*   Updated: 2022/09/19 20:58:54 by tasmiarahma      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 static int match_brackets(char a, char b)
 {
-	return ((a == '[' && b == ']') || (a == '{' && b == '}') || (a == '(' && b == ')'));
+	return ((a == '(' && b == ')') || (a == '{' && b == '}') || (a == '[' && b == ']'));
 }
 
 static int check_brackets(char *str)
