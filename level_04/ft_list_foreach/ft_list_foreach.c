@@ -30,6 +30,7 @@ void ft_list_foreach(t_list *begin_list, void (*f)(void *))
 void print_data(void *data)
 {
     printf("%s\n", data);
+    // printf("%s\n", (void *)data); // to turn off error to warn
 }
 
 int main(void)

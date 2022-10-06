@@ -6,15 +6,15 @@
 /*   By: tasmiarahman <tasmiarahman@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/08 11:55:29 by trahman           #+#    #+#             */
-/*   Updated: 2022/09/14 19:22:00 by tasmiarahma      ###   ########.fr       */
+/*   Updated: 2022/09/29 10:31:19 by tasmiarahma      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
 /*
-** The ft_chr() function will read and increase the charecter from input string
-** if the the charecter is not the delimeter than it will increase the as i++
+** The ft_chr() function will read and increase the character from input string
+** if the the character is not the delimeter than it will increase the as i++
 ** and return the index number of 2nd layer array
 */
 

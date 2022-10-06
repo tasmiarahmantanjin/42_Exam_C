@@ -35,7 +35,6 @@ int main(int ac, char **av)
                 write(1, "Invalid Option\n", 15);
                 return 0;
             }
-            j++;
         }
         i++;
     }
